@@ -1,0 +1,75 @@
+/* Modal Styling */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(240, 248, 255, 0.8); /* light blue tint */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .payment-modal {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .payment-modal h2 {
+    margin-bottom: 1rem;
+    color: #3a7ca5; /* soft blue */
+  }
+  
+  .payment-modal label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .payment-modal input {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .card-details {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .card-details div {
+    flex: 1;
+  }
+  
+  .total-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .buy-button {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    background-color: #3a7ca5; /* matching blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .buy-button:hover {
+    background-color: #2f6b8e;
+  }
+  
