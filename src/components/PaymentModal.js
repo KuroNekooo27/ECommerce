@@ -5,18 +5,20 @@ import { CartContext } from '../context/CartContext';
 const PaymentModal = ({ total, onClose }) => {
   const { clearCart } = useContext(CartContext);
 
-  const onCheckout = (e) => {
-    e.preventDefault(); // Prevent page reload
-    clearCart();        // Clear the cart
-    onClose();          // Close the modal
+  const handleCheckout = (e) => {
+    e.preventDefault();
+    clearCart();
     alert('Thank you for your purchase!');
+    onClose();
   };
 
   return (
     <div className="modal-overlay">
       <div className="payment-modal">
-        <h2>Complete Your Purchase</h2>
-        <form onSubmit={onCheckout}>
+        <button className="close-button" onClick={onClose}>✕</button>
+        <h2>Checkout</h2>
+
+        <form onSubmit={handleCheckout}>
           <label>Cardholder Name</label>
           <input type="text" placeholder="John Doe" required />
 
@@ -40,7 +42,6 @@ const PaymentModal = ({ total, onClose }) => {
           </div>
 
           <button type="submit" className="buy-button">Pay Now</button>
-          <button type="button" className="close-button" onClick={onClose}>Cancel</button>
         </form>
       </div>
     </div>

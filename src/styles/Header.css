@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.brand {
+  color: #2563eb;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar nav a:hover {
+  color: #2563eb;
+}
+
+.cart {
+  font-size: 1.2rem;
+}
